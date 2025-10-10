@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ibmec — Formulário</title>
+   <link href="https://fonts.google.com/share?selection.family=Fustat:wght@200..800" rel="stylesheet">
+  <link rel="stylesheet" href="formulario.css" />
+</head>
+<body>
+
+  <!-- NAVBAR BRANCA (logo imagem + menu + CTA) -->
+  <header class="nav">
+    <div class="wrap nav__row">
+      <a class="nav__brand" href="index.html" aria-label="Ibmec">
+        <img src="img/logo-ibmec1.png" alt="Ibmec" />
+      </a>
+
+      <nav class="nav__menu">
+        <a href="index.html">Início</a>
+        <a href="galeria.html">Galeria de projetos</a>
+        <a href="sobre.html">Sobre nós</a>
+      </nav>
+
+      <a class="btn btn--gold" href="#">Envie seu projeto</a>
+    </div>
+  </header>
+
+  <!-- TÍTULO EM FAIXA AZUL -->
+  <section class="titlebar">
+    <div class="wrap">
+      <h1>Formulário</h1>
+    </div>
+  </section>
+
+  <main>
+    <!-- BLOCO 1: imagem esquerda + painel direita + faixa amarela -->
+    <section class="band">
+      <div class="band__strip"></div>
+
+      <div class="wrap band__row band__row--1">
+        <figure class="band__photo">
+          <img src="img/image_4edit.png" alt="Profissional da empresa">
+        </figure>
+
+        <form class="panel panel--right">
+          <h2><span>Informações da Empresa:</span></h2>
+
+          <label>Nome da Empresa:</label>
+          <input type="text" placeholder="Ex.: Tech Solutions LTDA">
+
+          <label>CNPJ:</label>
+          <input type="text" placeholder="00.000.000/0001-00">
+
+          <label>Email para contato:</label>
+          <input type="email" placeholder="contato@empresa.com">
+
+          <label>Número de colaboradores da empresa:</label>
+          <div class="choices">
+            <label><input type="radio" name="collabs"> 1 a 10</label>
+            <label><input type="radio" name="collabs"> 11 a 20</label>
+            <label><input type="radio" name="collabs"> 21 a 50</label>
+            <label><input type="radio" name="collabs"> 50 a 100</label>
+            <label><input type="radio" name="collabs"> Mais que 100</label>
+          </div>
+
+          <label>Está vinculada ao Hubs?</label>
+          <select>
+            <option>Selecione…</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+
+          <label>Área de atuação:</label>
+          <input type="text" placeholder="Ex.: Fintech, Varejo, Educação…">
+        </form>
+      </div>
+
+      <div class="band__strip band__strip--bottom"></div>
+    </section>
+
+    <!-- BLOCO 2: painel esquerda + imagem direita + faixa amarela -->
+    <section class="band band--second">
+      <div class="wrap band__row band__row--2">
+        <form class="panel panel--left">
+          <h2><span>Informações do Projeto:</span></h2>
+
+          <label>Em quanto tempo você precisa do projeto?</label>
+          <select>
+            <option>Selecione…</option>
+            <option>Urgente (1–2 semanas)</option>
+            <option>Curto prazo (1 mês)</option>
+            <option>Médio prazo (2–3 meses)</option>
+            <option>Sem pressa</option>
+          </select>
+
+          <label>Tipo de demanda:</label>
+          <input type="text" placeholder="Ex.: Front-end, Back-end, Landing Page, Dados…">
+
+          <label>Descrição do projeto:</label>
+          <textarea placeholder="Descreva o escopo, requisitos e referências"></textarea>
+
+          <label class="terms">
+            <input type="checkbox"> Eu concordo com os <a href="#">Termos de uso</a>
+          </label>
+
+          <button type="button" class="btn btn--gold btn--full">Enviar</button>
+        </form>
+
+        <figure class="band__photo">
+          <img src="img/image_5.png" alt="Profissional satisfeito com projeto">
+        </figure>
+      </div>
+
+      <div class="band__strip band__strip--bottom"></div>
+    </section>
+  </main>
+
+</body>
+</html>
