@@ -137,3 +137,76 @@ margin-right: 10px;
 .empresa {
 font-size: 12px;
 }
+
+/* CARROSSEL DISCIPLINAS EXTENSIONISTAS LETICIA */
+.disextenc {
+    background-color: #F5AC00;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.disextenc h2 {
+    color: #333;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.carrossel {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borda {
+    border-radius: 15px;
+    flex-shrink: 0; 
+}
+
+.principal {
+    width: 100%;
+    max-width: 700px; 
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.principal .titulo {
+    background-color: #F5AC0038;
+    padding: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.principal .titulo h3 {
+    margin: 0;
+    font-size: 26px;
+    color: #333;
+}
+
+.principal .txt {
+    padding: 35px; 
+    color: #555;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.botao {
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%); 
+    background-color: #D9D9D9;
+    width: 100px; 
+    height: 300px;
+    z-index: 5; 
+}
+
+.esquerda {
+    left: 0;
+
+}
+
+.direita {
+    right: 0;
+
+}
