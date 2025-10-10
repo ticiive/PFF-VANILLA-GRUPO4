@@ -1,0 +1,139 @@
+/* ===================== TOKENS ===================== */
+:root{
+  --navy:#0c2d57;           /* azul escuro das faixas e painéis */
+  --gold:#f2b705;           /* amarelo das faixas e botões */
+  --ink:#0f172a;            /* texto */
+  --white:#ffffff;
+  --radius:12px;
+  --shadow:0 10px 24px rgba(12,45,87,.16);
+  --wrap:1160px;
+
+  /* espaçamentos */
+  --s1:6px; --s2:10px; --s3:14px; --s4:18px; --s5:24px; --s6:34px; --s7:48px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font:16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--ink);
+  background:#fff;
+}
+.wrap{max-width:var(--wrap); margin:0 auto; padding:0 var(--s5)}
+
+/* ===================== NAVBAR BRANCA ===================== */
+.nav{
+  background:#fff;
+  box-shadow:0 2px 0 rgba(12,45,87,.12);
+}
+.nav__row{
+  height:64px; display:flex; align-items:center; justify-content:space-between; gap:24px;
+}
+.nav__brand img{
+  height:30px; width:auto; display:block; /* sua logo aqui */
+}
+.nav__menu{
+  display:flex; align-items:center; gap:28px; flex:1; justify-content:center;
+}
+.nav__menu a{
+  color:#1b2430; text-decoration:none; font-weight:600;
+}
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  height:36px; padding:0 16px; border-radius:10px; font-weight:800; border:0; text-decoration:none;
+}
+.btn--gold{background:var(--gold); color:#111}
+.btn--gold:hover{filter:brightness(.95)}
+
+/* ===================== TÍTULO FAIXA AZUL ===================== */
+.titlebar{background:var(--navy)}
+.titlebar h1{
+  margin:0; padding:16px 0; color:#fff; font-size:28px; font-weight:800;
+}
+
+/* ===================== FAIXAS AMARELAS ===================== */
+.band__strip {
+  width: 1440px;         /* largura fixa */
+  height: 80px;          /* faixa 1 e 3 padrão */
+  background: var(--gold);
+  margin: 0 auto;        /* centraliza horizontalmente */
+}
+
+/* faixa grande (segunda, do meio) */
+.band__strip--middle {
+  width: 1440px;
+  height: 254px;
+  background: var(--gold);
+  margin: 0 auto;
+}
+
+/* faixa inferior */
+.band__strip--bottom {
+  width: 1440px;
+  height: 94px;
+  background: var(--gold);
+  margin: 0 auto;
+}
+
+.band__row{
+  display:grid; grid-template-columns: 1.05fr .95fr; gap:var(--s6);
+  align-items:start; margin:var(--s6) auto;
+}
+.band--second{padding-top:0}
+
+/* ===================== FOTO (preenche sem distorcer) ===================== */
+.band__photo{margin:0; border-radius:6px; overflow:hidden}
+.band__photo img{
+  width:100%; height:685px; object-fit:cover; object-position:center; display:block;
+}
+
+/* ===================== PAINEL AZUL ===================== */
+.panel{
+  background:var(--navy);
+  color:#e8eef7;
+  border-radius:10px;
+  padding:var(--s6);
+  box-shadow:var(--shadow);
+  width:420px;                   /* largura coerente com mock */
+}
+.panel--right{margin-top:-86px; margin-left:auto;}   /* sobrepõe imagem/faixa */
+.panel--left {margin-top:-30px;}                     /* leve sobreposição */
+
+.panel h2{
+  margin:0 0 var(--s4);
+}
+.panel h2 span{
+  display:inline-block;
+  padding:8px 12px;
+  border:2px solid rgba(255,255,255,.28);
+  border-radius:8px;
+  color:#fff; font-weight:800; font-size:18px;
+}
+
+/* inputs */
+.panel label{display:block; margin:10px 0 6px; font-weight:700}
+.panel input[type="text"],
+.panel input[type="email"],
+.panel select,
+.panel textarea{
+  width:100%; border:1px solid rgba(255,255,255,.28);
+  background:#e8eef9; color:#0b1730;
+  padding:10px 12px; border-radius:8px; outline:none;
+}
+.panel textarea{min-height:130px; resize:vertical}
+
+.choices{display:grid; gap:6px; margin:6px 0 10px}
+.choices label{font-weight:600}
+.choices input{margin-right:8px}
+
+.terms{display:flex; align-items:center; gap:10px; margin:10px 0}
+.terms a{color:#e8eef7; text-decoration:underline}
+
+/* botão enviar */
+.btn--full{width:100%; height:38px; border-radius:8px; margin-top:6px}
+
+/* ====== sem breakpoint mobile, apenas fluido no desktop ====== */
+@media (min-width:1400px){
+  :root{ --wrap:1220px }
+}
