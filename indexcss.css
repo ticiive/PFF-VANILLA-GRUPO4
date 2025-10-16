@@ -6,14 +6,14 @@
 }
 
 
-body {
+/*body {
 font-family: Arial, sans-serif;
 background-color: #f4f4f4;
 display: flex;
 justify-content: center;
 align-items: center;
 height: 100vh;
-}
+}*/
 
 .comentario{ 
     display: flex;
@@ -209,4 +209,29 @@ font-size: 12px;
 .direita {
     right: 0;
 
+}
+
+.botao:hover {
+  filter: brightness(85%); /* Escurece o botão para 85% do brilho original */
+}
+
+
+/* Garanta que apenas o primeiro card esteja visível ao carregar a página */
+.principal {
+    display: none; /* Esconde todos os cards por padrão */
+}
+
+.principal.ativo {
+    display: block; /* A classe 'ativo' tornará o card visível */
+}
+
+/* Opcional: Adicionar uma transição de fade */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.principal.ativo {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
 }
