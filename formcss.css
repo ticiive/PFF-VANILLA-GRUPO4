@@ -1,0 +1,47 @@
+/* Barra de Navegação (Navbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logoib {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-dark-blue);
+    /* Ajuste para replicar o logo, se necessário */
+}
+
+.nav-links a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 5px; /* Espaço para o underline da página ativa */
+}
+
+.nav-links .active {
+    color: #0b2a57;
+    border-bottom: 3px solid #0b2a57;
+}
+
+/* Botão Primário */
+.btn-primary {
+    background-color: #f8b809;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    
+}
+
+.btn-primary:hover {
+    background-color: #e69d00; /* Um pouco mais escuro */
+}
