@@ -47,5 +47,62 @@
 }
 
 
+.galeria {
+  padding: 40px;
+  text-align: center;
+}
+
+.galeria h2 {
+  color: #002855;
+  margin-bottom: 30px;
+}
 
 
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #fff3da;
+  width: 80%;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 #002855;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 8px 8px 0 #002855;
+}
+
+
+.texto {
+  flex: 1;
+  text-align: left;
+  font-size: 15px;
+  color: #222;
+  margin: 0 20px;
+}
+
+
+.imagem {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  background-color: #002855;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+
+.card:nth-child(even) {
+  flex-direction: row-reverse;
+}
