@@ -2,17 +2,17 @@ const projetos = [
   {
     nomeProjeto: "Projeto sem nome",
     informacaoProjeto: "O projeto consiste...",
-    imagem: "midia/projeto1.jpg"
+    imagem: "mídia/pessoaCodigo.jpg"
   },
   {
     nomeProjeto: "App de Estudos",
     informacaoProjeto: "O projeto consiste...",
-    imagem: "midia/projeto2.jpg"
+    imagem: "mídia/pessoaCodigo.jpg"
   },
   {
     nomeProjeto: "Site de Receitas",
     informacaoProjeto: "O projeto consiste...",
-    imagem: "midia/projeto3.jpg"
+    imagem: "mídia/pessoaCodigo.jpg"
   }
 ];
 
@@ -33,8 +33,7 @@ const projetos = [
   texto.className = "texto";
   texto.innerHTML = `
     <h3>${el.nomeProjeto}</h3>
-    <p>${el.informacaoProjeto}</p>
-  `;
+    <p>${el.informacaoProjeto}</p>`;
 
   card.append(texto, img);
   div.append(card);
