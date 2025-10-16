@@ -17,7 +17,7 @@ const projetos = [
 ];
 
 
-  function criaCard(el, index) {
+  function criaCard(el) {
   const div = document.getElementById("dv");
   const card = document.createElement("div");
   card.className = "card";
@@ -40,6 +40,6 @@ const projetos = [
   div.append(card);
 }
 
-projetos.forEach((projeto, i) => criaCard(projeto, i));
+projetos.forEach((projeto) => criaCard(projeto));
 
 
