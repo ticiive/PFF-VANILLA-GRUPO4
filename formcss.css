@@ -22,29 +22,54 @@ body{
 }
 .wrap{max-width:var(--wrap); margin:0 auto; padding:0 var(--s5)}
 
-/* ===================== NAVBAR BRANCA ===================== */
-.nav{
-  background:#fff;
-  box-shadow:0 2px 0 rgba(12,45,87,.12);
+/* Barra de Navegação (Navbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
-.nav__row{
-  height:64px; display:flex; align-items:center; justify-content:space-between; gap:24px;
+
+.logoib {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-dark-blue);
+    /* Ajuste para replicar o logo, se necessário */
 }
-.nav__brand img{
-  height:30px; width:auto; display:block; /* sua logo aqui */
+
+.nav-links a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 5px; /* Espaço para o underline da página ativa */
 }
-.nav__menu{
-  display:flex; align-items:center; gap:28px; flex:1; justify-content:center;
+
+.nav-links .active {
+    color: #0b2a57;
+    border-bottom: 3px solid #0b2a57;
 }
-.nav__menu a{
-  color:#1b2430; text-decoration:none; font-weight:600;
+
+/* Botão Primário */
+.btn-primary {
+    background-color: #f8b809;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    
 }
-.btn{
-  display:inline-flex; align-items:center; justify-content:center;
-  height:36px; padding:0 16px; border-radius:10px; font-weight:800; border:0; text-decoration:none;
+
+.btn-primary:hover {
+    background-color: #e69d00; /* Um pouco mais escuro */
 }
-.btn--gold{background:var(--gold); color:#111}
-.btn--gold:hover{filter:brightness(.95)}
+/* fim */
 
 /* ===================== TÍTULO FAIXA AZUL ===================== */
 .titlebar{background:var(--navy)}
