@@ -25,7 +25,7 @@
 html,body{height:100%}
 body{
   margin:0;
-  font:16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font:16px/1.55;
   color:var(--ink);
   background:#fff;
 }
@@ -170,4 +170,54 @@ body{
 /* ====== sem breakpoint mobile, apenas fluido no desktop ====== */
 @media (min-width:1400px){
   :root{ --wrap:1220px }
+}
+
+
+.footer-bar {
+    background-color:#0A244E; ;
+    color: white; /* Texto do footer em branco */
+    padding: 20px 80px; 
+    display: flex;
+    flex-direction: column; /* Empilha os itens (redes em cima, copyright embaixo) */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Garante que o texto fique centralizado */
+    font-size: 14px;
+}
+
+/* Estilo para o grupo de redes sociais */
+.social-links {
+    display: flex;
+    gap: 30px; 
+    margin-bottom: 15px; /* Espaço entre as redes e o copyright */
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as redes sociais */
+}
+
+/* Estilo para cada grupo de ícone/texto social */
+.social-link-item {
+     display: flex;
+    align-items: center;
+    gap: 10px; /* Aumentado de 8px para 10px para dar mais respiro com ícones maiores */
+}
+
+.social-link-item img {
+     width: 30px; /* AUMENTADO O TAMANHO DOS ÍCONES */
+    height: 30px; /* AUMENTADO O TAMANHO DOS ÍCONES */
+     /* NOTA: Para ícones PNG/JPG brancos, as imagens precisam ser brancas na origem. */
+}
+
+.social-link-item p {
+    color: white; /* Garante que o texto @ibmec é branco */
+    margin: 0;
+}
+
+.hero-title-bar {
+    background-color: #0A244E;;
+    color: white;
+    padding: 40px 80px;
+}
+
+.hero-title-bar h1 {
+    font-size: 36px;
+    font-weight: 700;
 }
