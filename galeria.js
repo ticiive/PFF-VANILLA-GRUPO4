@@ -2,17 +2,17 @@ const projetos = [
   {
     nomeProjeto: "Projeto sem nome",
     informacaoProjeto: "O projeto consiste...",
-    imagem: "Mídia/imagemGaleria.png"
+    imagem: "./Mídia/imagemGaleria.png"
   },
   {
     nomeProjeto: "App de Estudos",
     informacaoProjeto: "O projeto consiste...",
-    imagem: "Mídia/imagemGaleria.png"
+    imagem: "./Mídia/imagemGaleria.png"
   },
   {
     nomeProjeto: "Site de Receitas",
     informacaoProjeto: "O projeto consiste...",
-    imagem: "Mídia/imagemGaleria.png"
+    imagem: "./Mídia/imagemGaleria.png"
   }
 ];
 
