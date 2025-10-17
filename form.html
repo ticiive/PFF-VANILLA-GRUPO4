@@ -5,26 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ibmec — Formulário</title>
    <link href="https://fonts.google.com/share?selection.family=Fustat:wght@200..800" rel="stylesheet">
-  <link rel="stylesheet" href="formulario.css" />
+  <link rel="stylesheet" href="formcss.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- NAVBAR BRANCA (logo imagem + menu + CTA) -->
-  <header class="nav">
-    <div class="wrap nav__row">
-      <a class="nav__brand" href="index.html" aria-label="Ibmec">
-        <img src="img/logo-ibmec1.png" alt="Ibmec" />
-      </a>
-
-      <nav class="nav__menu">
-        <a href="index.html">Início</a>
-        <a href="galeria.html">Galeria de projetos</a>
-        <a href="sobre.html">Sobre nós</a>
-      </nav>
-
-      <a class="btn btn--gold" href="#">Envie seu projeto</a>
-    </div>
-  </header>
+  <!-- header -->
+<header class="navbar">
+        <div class="logoib"><img src="Mídia/logo-ibmec1.png" alt="logo da ibmec"></div>
+        <nav class="nav-links">
+            <a href="index.html">Início</a>
+            <a href="galeria.html">Galeria de projetos</a>
+            <a href="sobre.html">Sobre nós</a>
+        </nav>
+        <a href="form.html" class="btn-primary">Envie seu projeto</a>
+    </header>
 
   <!-- TÍTULO EM FAIXA AZUL -->
   <section class="titlebar">
@@ -40,7 +37,7 @@
 
       <div class="wrap band__row band__row--1">
         <figure class="band__photo">
-          <img src="img/image_4edit.png" alt="Profissional da empresa">
+          <img src="Mídia/image 4.png" alt="Profissional da empresa">
         </figure>
 
         <form class="panel panel--right">
@@ -108,13 +105,14 @@
         </form>
 
         <figure class="band__photo">
-          <img src="img/image_5.png" alt="Profissional satisfeito com projeto">
+          <img src="Mídia/image 5.png" alt="Profissional satisfeito com projeto">
         </figure>
       </div>
 
       <div class="band__strip band__strip--bottom"></div>
     </section>
   </main>
+  <script src="forms.js"></script>
 
 </body>
 </html>

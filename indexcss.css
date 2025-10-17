@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "inter", sans-serif;
+    font-family: "Fustat", sans-serif;
 }
 
 
@@ -63,6 +63,77 @@ height: 100vh;
     background-color: #e69d00; /* Um pouco mais escuro */
 }
 /* fim */
+/* DESTAQUES */
+/* --- CSS para a Seção da Galeria (Versão Corrigida) --- */
+
+/* Container principal da seção.
+  Adicionamos um espaçamento superior para desgrudar do menu.
+*/
+.galeria-projetos {
+    padding-top: 40px; /* Ajuste conforme necessário */
+    padding-bottom: 40px; /* Ajuste conforme necessário */
+}
+
+.galeria-container {
+    /* Layout Flexbox */
+    display: flex;
+    gap: 16px;
+
+    /* Centralização e largura máxima */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Evita que o conteúdo cole nas bordas em telas menores */
+
+    /* A MUDANÇA PRINCIPAL ESTÁ AQUI:
+      Limitamos a altura da galeria.
+      - '60vh' significa 60% da altura da tela do navegador.
+      - 'max-height' é um limite fixo para evitar que fique grande demais em telas muito altas.
+      - Você pode ajustar esses valores!
+    */
+    height: 60vh;
+    max-height: 550px; 
+}
+
+/* Coluna da imagem grande (esquerda) */
+.coluna-grande {
+    flex: 2; /* Ocupa 2/3 do espaço */
+}
+
+/* Coluna das imagens pequenas (direita) */
+.coluna-pequena {
+    flex: 1; /* Ocupa 1/3 do espaço */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* As duas divs dentro da coluna pequena.
+  'flex: 1' aqui faz com que elas dividam o espaço vertical igualmente.
+*/
+.coluna-pequena .imagem-pequena {
+    flex: 1;
+    min-height: 0; /* Correção para flexbox em alguns navegadores */
+}
+
+/* Estilo para TODAS as imagens da galeria */
+.galeria-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ESSENCIAL: Preenche o espaço sem distorcer a imagem */
+    display: block;
+    border-radius: 8px; /* Opcional: bordas arredondadas */
+}
+
+/* --- Media Query para Telas Pequenas (Responsividade) --- */
+@media (max-width: 768px) {
+    .galeria-container {
+        /* Em telas de celular, removemos a altura fixa para o conteúdo fluir */
+        height: auto;
+        flex-direction: column;
+    }
+}
+
+/*FIM DESTAQUES*/
 
 .comentario{ 
     display: flex;
