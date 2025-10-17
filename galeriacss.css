@@ -73,15 +73,12 @@
   width: 80%;
   max-width: 900px;
   border-radius: 10px;
-  box-shadow: 4px 4px 0 #002855;
+  
   padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card:hover {
-  transform: scale(1.02);
-  box-shadow: 8px 8px 0 #002855;
-}
+
 
 
 .texto {
@@ -89,7 +86,7 @@
   text-align: left;
   font-size: 15px;
   color: #222;
-  margin: 0 20px;
+  margin: 0 40px;
 }
 
 
@@ -106,3 +103,16 @@
 .card:nth-child(even) {
   flex-direction: row-reverse;
 }
+
+.galeria-header {
+      background-color: #002855; /* azul escuro */
+      padding: 40px 20px;
+      text-align: left;
+      color: #ffffff;
+    }
+
+    .galeria-header h1 {
+      margin: 0;
+      margin-left: 80px;
+      font-size: 28px;
+    }
